@@ -1,0 +1,30 @@
+.partner{
+    font-family: Inter, sans-serif;
+    margin-top: 100px;
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    &__wrapper{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        li{
+            height: 150px;
+            width: 150px;
+            margin-right: 30px;
+        }
+        li:nth-child(1){
+            width: 120px;
+        }
+        li:nth-child(4){
+            width: 120px;
+            margin: 0;
+        }
+    }
+
+}

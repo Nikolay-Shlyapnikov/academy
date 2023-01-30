@@ -1,0 +1,24 @@
+$gray: #7D7D7D;
+$white: #FFF;
+$black: #2A2A2A;
+$red: #E70000;
+* {
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(180deg,#1f0763 35.42%,rgba(162,1,116,.69));
+}
+
+.container {
+    width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+ @import 'null.scss';
+@import 'adaptive.scss';
+@import 'order.scss';
+@import 'about.scss';
+@import 'descipline.scss';
+@import 'possibilities.scss';
+@import 'labour.scss';
+@import 'partner.scss';

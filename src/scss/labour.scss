@@ -1,0 +1,89 @@
+.labour{
+    font-family: Inter, sans-serif;
+    margin-top: 140px;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #fff;
+    }
+    &__sub-title{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        margin: 20px auto;
+        color: #fff;
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__left-side{
+        flex-basis: 40%;
+        margin-right: 40px;
+    }
+    &__vacancy{
+        background-image: url(../img/vacancy.png);
+        background-size: cover;
+        width: 466px;
+        height: 362px;
+    }
+    &__right-side{
+        flex-basis: 60%;
+        ul{
+            list-style: none;
+        }
+        li{
+            padding: 20px 65px 45px;
+            background: #fff;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            color: #040775;
+            margin-bottom: 30px;
+            border-radius: 0 0 0 100px;
+            position: relative;
+        }
+        li:before, li:after{
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: -12px;
+            width: 17px;
+            height: 2px;
+            background-color: #00e600;
+        }
+        li:before{
+            transform: rotate(45deg);
+            left: -32px;
+            top: -3px;
+            width: 12px;
+        }
+        li:after{
+            width: 20px;
+            left: -25px;
+            top:-5px;
+            transform: rotate(-45deg);
+        }
+    }
+    &__button{
+        width: 253px;
+        padding: 20px 0;
+        border-radius: 50px;
+        background: #fff;
+        border: 1px solid #040775;
+        text-align: center;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 130%;
+        color: #040775;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+}
