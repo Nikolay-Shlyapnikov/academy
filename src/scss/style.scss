@@ -8,13 +8,15 @@ $red: #E70000;
 body{
     background: linear-gradient(180deg,#1f0763 35.42%,rgba(162,1,116,.69));
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .container {
     width: 1200px;
     padding: 0 24px;
     margin: 0 auto;
 }
- @import 'null.scss';
+@import 'null.scss';
 @import 'adaptive.scss';
 @import 'order.scss';
 @import 'about.scss';
@@ -22,3 +24,9 @@ body{
 @import 'possibilities.scss';
 @import 'labour.scss';
 @import 'partner.scss';
+@import 'contact.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'teacher.scss';
+@import 'price.scss';
+

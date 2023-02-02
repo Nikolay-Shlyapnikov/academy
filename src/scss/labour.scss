@@ -87,3 +87,34 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 992px) { 
+    .labour{
+        &__button{
+            margin: 40px auto;
+        }
+        &__wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        &__vacancy{
+            display: none;
+        }
+        &__right-side{
+            li:before,li:after{
+                top:80%;
+                left: 0px;
+            }
+            li:after{
+                left: 6px;
+                top: calc(80% - 3px);
+
+            }
+            li{
+                padding: 20px 30px 35px;
+            }
+        }
+    }
+ }

@@ -5,11 +5,13 @@
         display: flex;
         justify-content: space-between;
     }
-    &__rigth-side{
+    &__right-side{
         width: 687px;
+        max-width: 100%;
     }
     &__left-side{
         width: 367px;
+        max-width: 100%;
     }
     &__title{
         font-size: 27px;
@@ -33,6 +35,8 @@
         background-position: 50% center;
         background-size: cover;
         width: 100%;
+        display: block;
+
         &--first{
             background-image: url(../img/about-first.png);
             height: 494px;
@@ -42,12 +46,31 @@
             position: relative;
         }
         &--second{
+            top: -110px;
+            left: calc(0px + 50 * (100vw/1200));
             background-image: url(../img/about-second.png);
             height: 291px;
-            margin: -110px 0 0 100px;
             z-index: 1;
             max-width: 597px;
             position: relative;
+        }
+    }
+}
+
+@media (max-width: 768px) { 
+   .about{
+    &__wrapper{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+   }
+}
+@media (max-width: 575px) { 
+    .about{
+        &__image{
+            &--second{
+                position: static;
+            }
         }
     }
 }
